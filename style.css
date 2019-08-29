@@ -7,9 +7,8 @@ body {
   top: 0.09%;
   bottom: -0.09%;
 
-  background: url(http://y0.f.mf-image.ru/d/eyJ0IjoiMjAxOS0wOC0yNlQyMDo0NDo1NC4yMDMzNTU4WiIsInRtIjoxNSwiYmQiOjEsImZkIjo1OTEyNzYyLCJyZiI6bnVsbCwic2wiOjAsImZuIjpudWxsLCJyIjoiaHR0cHM6Ly9teS1maWxlcy5ydS94ejJhcWEiLCJsIjpudWxsfQ,,.1F65AAB778BC6246605A9A112CC3E09C./background.png);
+  background: url(background.png);
 }
-
 
 .authorization1{
   /* Group 4 */
@@ -180,6 +179,7 @@ input[type = "password"]{
   text-align: center;
   font-size: 32px;
   color: white;
+  background: url(Logo.svg);
 }
 
 .avatar{
