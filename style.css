@@ -6,7 +6,8 @@ body {
   right: 0%;
   top: 0.09%;
   bottom: -0.09%;
-
+  width: 100%; /* Full width */
+  height: 100%;
   background: url(background.png);
   background-repeat:no-repeat;
 }
@@ -18,12 +19,10 @@ body {
   right: 34.38%;
   top: 31.11%;
   bottom: 31.02%;
-
   background: #FFFFFF;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-
   
 .authorization2{
   position: absolute;
@@ -31,24 +30,20 @@ body {
   right: 34.38%;
   top: 31.11%;
   bottom: 31.02%;
-
   background: #FFFFFF;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
 
-.authorization3{
-  
+.authorization3{  
   position: absolute;
   left: 34.38%;
   right: 34.38%;
   top: 31.11%;
   bottom: 31.02%;
-
   background: #FFFFFF;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  
+  border-radius: 8px;  
 }
 
 input[type = "e-mail"]{
@@ -57,19 +52,16 @@ input[type = "e-mail"]{
   right: 36.88%;
   top: 42.69%;
   bottom: 52.87%;
-
   background: #F1F1F1;
   border-radius: 4px;
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
-
 /* identical to box height */
   color: #262626;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 input[type = "password"]{
-
   position: absolute;
   left: 36.88%;
   right: 36.88%;
@@ -80,19 +72,23 @@ input[type = "password"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
-
 /* identical to box height */
-
   color: #262626;
-  opacity: 0.4;
+  opacity: 0.8;
+}
+
+input::-webkit-input-placeholder {
+	opacity: 0.4;
+}
+					
+input:-moz-placeholder { /* Firefox 18- */
+	opacity: 0.4;  
 }
 .log_in{
   position: absolute;
   height: 29px;
-  left: 45%;
-  
+  left: 45%;  
   top: calc(50% - 29px/2 - 141.5px);
-
   font-family: Gotham;
   font-size: 24px;
   line-height: 29px;
@@ -100,9 +96,7 @@ input[type = "password"]{
 /* identical to box height */
   text-align: center;
   letter-spacing: 0.2px;
-
   color: #262626;
-
   opacity: 0.8;
 }
 
@@ -123,17 +117,14 @@ input[type = "password"]{
 }
 
 .button1, .button2, .button3{
-
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-
   background: #ED4159;
   box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
   border-radius: 100px;
-  
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
@@ -141,34 +132,28 @@ input[type = "password"]{
   text-align: center;
   color: #FFFFFF;
 }
+
 .button_login2{
   position: absolute;
   left: 46.2%;
   right: 46.2%;
   top: 65.65%;
-  bottom: 29.91%;
-  
+  bottom: 29.91%;  
 }
   
 .error{
   /* Rectangle */
-
   position: absolute;
   left: 36.88%;
   right: 36.93%;
   top: 57.5%;
   bottom: 38.8%;
-
   background: rgba(237, 65, 89, 0.25);
   border-radius: 4px;
-
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
-
   color: #ED4159;
-
-
 }
 
 .logo{
@@ -186,7 +171,6 @@ input[type = "password"]{
 
 .avatar{
   /* Oval 2 */
-
   position: absolute;
   left: 46.67%;
   right: 46.67%;
@@ -197,14 +181,11 @@ input[type = "password"]{
 .username{
   position: absolute;
   height: 34px;
-  left: 44.48%;
-  
+  left: 44.48%; 
   top: calc(50% - 34px/2 - 5px);
-
   font-family: Gotham;
   font-size: 28px;
   line-height: 34px;
-
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.233333px;
@@ -217,19 +198,6 @@ input[type = "password"]{
   background: #FFFFFF;
   box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
   border-radius: 100px;
-  position: absolute;
-  height: 17px;
-  left: 32px;
-  right: 32px;
-  top: 16px;
-
-  font-family: Gotham;
-  font-size: 14px;
-  line-height: 17px;
-
-  
-  text-align: center;
-
   color: #ED4159;
 }
 
@@ -237,17 +205,6 @@ input[type = "password"]{
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5);
   border-radius: 100px;
-  height: 17px;
-  left: 32px;
-  right: 32px;
-  top: 16px;
-
-  font-family: Gotham;
-  font-size: 14px;
-  line-height: 17px;
-
-  text-align: center;
-
   color: #ED4159;
 } 
 */
