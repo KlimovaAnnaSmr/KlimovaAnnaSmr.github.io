@@ -180,6 +180,7 @@ input[type = "password"]{
   font-size: 32px;
   color: white;
   background: url(Logo.svg);
+  background-repeat: no-repeat;
 }
 
 .avatar{
