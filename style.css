@@ -260,11 +260,10 @@ input:-moz-placeholder { /* Firefox 18- */
   color: #262626;
   opacity: 0.8;
 }
-/*
-.button1, .button2, .button3:hover, 
-.button1, .button2, .button3:active
+
+.button1:hover, .button2:hover, .button3:hover, 
+.button1:active, .button2:active, .button3:active 
  {
   background: #FFFFFF;
   color: #ED4159;
 }
-*/
