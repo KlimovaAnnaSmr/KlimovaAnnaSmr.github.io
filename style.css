@@ -238,7 +238,8 @@ input:-moz-placeholder { /* Firefox 18- */
   /* Oval 2 */
   position:relative;
   top: 10%;
-  margin-left: 33%;
+  margin-left: 35%;
+ 
   /*position: absolute;
   left: 46.67%;
   right: 46.67%;
