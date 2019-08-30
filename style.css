@@ -274,13 +274,13 @@ input:-moz-placeholder { /* Firefox 18- */
     right: -107.81%;
     top: 0%;
     bottom: -0.18%;
-    background: linear-gradient(150.63deg, #FF435D 0%, #B0208E 100%);
+    background: url(background.png);
     }
   .desktop1{
-    left: 34.38%;
-    right: 34.38%;
-    top: 31.11%;
-    bottom: 31.02%;
+    left: 5%;
+    right: 5%;
+    top: 21.13%;
+    bottom: 18.31%
   }
   .desktop3{
     left: 5%;
