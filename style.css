@@ -268,7 +268,13 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 /*переопределение свойств для экранов мобильных устройств посредством медиазапроса*/
 @media (min-width: 300px) and (max-width: 767.98px) {
-  .desktop1{
+ body{
+	left: -108.12%;
+	right: -108.12%;
+	top: 0%;
+	bottom: -0.18%;
+}
+.desktop1{
     left: 5%;
     right: 5%;
     top: 21.13%;
