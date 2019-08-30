@@ -1,29 +1,18 @@
 /* Styles go here */
 
-.main {
+body {
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0.09%;
   bottom: -0.09%;
-  width: 100%; /* Full width */
-  height: 100%;
   background: url(background.png);
 }
 
-.authorization1{
+
+.desktop1, .desktop3, .desktop4{
   /* Group 4 */
-   position: absolute;
-  left: 34.38%;
-  right: 34.38%;
-  top: 31.11%;
-  bottom: 31.02%;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-}
-  
-.authorization2{
+
   position: absolute;
   left: 34.38%;
   right: 34.38%;
@@ -34,23 +23,24 @@
   border-radius: 8px;
 }
 
-.authorization3{  
-  position: absolute;
-  left: 34.38%;
-  right: 34.38%;
-  top: 31.11%;
-  bottom: 31.02%;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;  
+.authorization1, .authorization2, .authorization3{
+  position:static;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
 }
 
 input[type = "e-mail"]{
+ /*
  position: absolute;
   left: 36.88%;
   right: 36.88%;
   top: 42.69%;
   bottom: 52.87%;
+  */
+  position: relative;
+  top: 25%;
+  width: 80%;
+  /*margin: 40% auto;*/
   background: #F1F1F1;
   border-radius: 4px;
   font-family: Gotham;
@@ -60,12 +50,25 @@ input[type = "e-mail"]{
   color: #262626;
   opacity: 0.8;
 }
+
+
+
+.error_css{
+  color: #ED4159;
+  border: 1px solid #ED4159;
+}
+
 input[type = "password"]{
-  position: absolute;
+
+  /*position: absolute;
   left: 36.88%;
   right: 36.88%;
   top: 50.09%;
-  bottom: 45.46%;
+  bottom: 45.46%;*/
+  position: relative;
+  top: 35%;
+  width: 80%;
+  /*margin: auto 9%;*/
   background: #F1F1F1;
   border-radius: 4px;
   font-family: Gotham;
@@ -84,10 +87,12 @@ input:-moz-placeholder { /* Firefox 18- */
 	opacity: 0.4;  
 }
 .log_in{
-  position: absolute;
+  /*position: absolute;
+  left: 45%;
+  top: calc(50% - 29px/2 - 141.5px);*/
+  position:relative;
+  top: 15%;
   height: 29px;
-  left: 45%;  
-  top: calc(50% - 29px/2 - 141.5px);
   font-family: Gotham;
   font-size: 24px;
   line-height: 29px;
@@ -95,35 +100,45 @@ input:-moz-placeholder { /* Firefox 18- */
 /* identical to box height */
   text-align: center;
   letter-spacing: 0.2px;
+
   color: #262626;
+
   opacity: 0.8;
 }
 
 .button_login1{
+  /*
   position: absolute;
   left: 46.2%;
   right: 46.2%;
   top: 58.98%;
-  bottom: 36.57%;
+  bottom: 36.57%;*/
+  position:relative;
+  top:45%;
 }
 
 .button_login3{
-  position: absolute;
+  /*position: absolute;
   left: 45.99%;
   right: 45.99%;
   top: 56.3%;
-  bottom: 39.26%;
+  bottom: 39.26%;*/
+  position:relative;
+  top:50%;
 }
 
 .button1, .button2, .button3{
-  position: absolute;
+
+  /*position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%;
+  bottom: 0%;*/
+
   background: #ED4159;
   box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
   border-radius: 100px;
+  
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
@@ -131,27 +146,32 @@ input:-moz-placeholder { /* Firefox 18- */
   text-align: center;
   color: #FFFFFF;
 }
-
 .button_login2{
-  position: absolute;
+  /*position: absolute;
   left: 46.2%;
   right: 46.2%;
   top: 65.65%;
-  bottom: 29.91%;  
+  bottom: 29.91%;*/
+  position:relative;
+  top:50%;
 }
   
 .error{
-  /* Rectangle */
+  /*
   position: absolute;
   left: 36.88%;
   right: 36.93%;
   top: 57.5%;
-  bottom: 38.8%;
+  bottom: 38.8%;*/
+  
+
   background: rgba(237, 65, 89, 0.25);
   border-radius: 4px;
+
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
+
   color: #ED4159;
 }
 
@@ -164,12 +184,12 @@ input:-moz-placeholder { /* Firefox 18- */
   text-align: center;
   font-size: 32px;
   color: white;
-  background: url(Logo.svg);
-  background-repeat: no-repeat;
+  background: url();
 }
 
 .avatar{
   /* Oval 2 */
+
   position: absolute;
   left: 46.67%;
   right: 46.67%;
@@ -180,11 +200,14 @@ input:-moz-placeholder { /* Firefox 18- */
 .username{
   position: absolute;
   height: 34px;
-  left: 44.48%; 
+  left: 44.48%;
+  
   top: calc(50% - 34px/2 - 5px);
+
   font-family: Gotham;
   font-size: 28px;
   line-height: 34px;
+
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.233333px;
@@ -192,18 +215,10 @@ input:-moz-placeholder { /* Firefox 18- */
   opacity: 0.8;
 }
 /*
-.button1, .button2, .button3:hover
+.button1, .button2, .button3:hover, 
+.button1, .button2, .button3:active
  {
   background: #FFFFFF;
-  box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
-  border-radius: 100px;
   color: #ED4159;
 }
-
-.button1, .button2, .button3:active {
-  background: #FFFFFF;
-  box-shadow: 0px 2px 10px rgba(237, 65, 89, 0.5);
-  border-radius: 100px;
-  color: #ED4159;
-} 
 */
