@@ -9,7 +9,8 @@ body {
   background: url(background.png);
 }
 
-.desktop1, .desktop3, .desktop4{
+
+.desktop1{
   /* Group 4 */
 
   position: absolute;
@@ -21,7 +22,30 @@ body {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
+.desktop3{
+  /* Group 4 */
 
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 27.96%;
+  bottom: 33.7%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.desktop4{
+  /* Group 4 */
+
+  position: absolute;
+  left: 34.38%;
+  right: 34.38%;
+  top: 31.11%;
+  bottom: 31.02%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
 .authorization1, .authorization2, .authorization3{
   position:static;
   width: 100%; /* Full width */
@@ -100,7 +124,6 @@ input:-moz-placeholder { /* Firefox 18- */
   font-family: Gotham;
   font-size: 24px;
   line-height: 29px;
-/* identical to box height */
   text-align: center;
   letter-spacing: 0.2px;
   color: #262626;
@@ -133,7 +156,7 @@ input:-moz-placeholder { /* Firefox 18- */
   top: 56.3%;
   bottom: 39.26%;*/
   position: relative;
-  top: 45%;
+  top: 25%;
   margin-left: auto;
   margin-right: auto;
   height: 10%;
@@ -147,7 +170,7 @@ input:-moz-placeholder { /* Firefox 18- */
   top: 65.65%;
   bottom: 29.91%;*/
   position: relative;
-  top: 45%;
+  top: 35%;
   margin-left: auto;
   margin-right: auto;
   height: 10%;
@@ -211,9 +234,11 @@ input:-moz-placeholder { /* Firefox 18- */
   background: url(Logo.svg);
 }
 
-.avatar{
+.img_avatar{
   /* Oval 2 */
   position:relative;
+  top: 10%;
+  margin-left: 33%;
   /*position: absolute;
   left: 46.67%;
   right: 46.67%;
@@ -222,12 +247,15 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .username{
-  position: absolute;
-  height: 34px;
-  left: 44.48%;
+  /*position: absolute;
   
-  top: calc(50% - 34px/2 - 5px);
-
+  left:: 44.48%;
+  
+  top: calc(50% - 34px/2 - 5px);*/
+  position: relative;
+  top:18%;
+  margin-left: 30%;
+  height: 34px;
   font-family: Gotham;
   font-size: 28px;
   line-height: 34px;
