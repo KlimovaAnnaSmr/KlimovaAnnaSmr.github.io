@@ -284,8 +284,8 @@ input:-moz-placeholder { /* Firefox 18- */
   .button_login2, 
   .button_login3{
      width: 30%;
-     left: 27.19%;
-     right: 27.5%;  
+     left: 35%;
+     right: 35%;  
   }
 }
 
