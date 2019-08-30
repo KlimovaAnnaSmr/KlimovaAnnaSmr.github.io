@@ -53,8 +53,8 @@ body {
 }
 
 input[type = "e-mail"]{
-  position: relative;
-  top: 25%;
+  position: absolute;
+  top: 35%;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
@@ -83,9 +83,9 @@ input[type = "password"]{
   right: 36.88%;
   top: 50.09%;
   bottom: 45.46%;*/
-  position: relative;
+  position: absolute;
   width: 80%;
-  top: 35%;
+  top: 55%;
   height: 9%;
   margin-left:10%;
   margin-right:10%;
@@ -100,12 +100,12 @@ input[type = "password"]{
 }
 
 #e-mail2{
-  top: 20%;
+  top: 25%;
   height: auto;
 }
 
 #password2{
-  top: 30%;
+  top: 45%;
   height: auto;
 }
 
@@ -117,7 +117,7 @@ input:-moz-placeholder { /* Firefox 18- */
 	opacity: 0.4;  
 }
 .log_in{
-  position:relative;
+  position:absolute;
   top: 15%;
   margin-left:40%;
   height: 29px;
@@ -135,13 +135,12 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 .button_login1{
   /*
+  top: 58.98%;
+  bottom: 36.57%;*/
   position: absolute;
   left: 46.2%;
   right: 46.2%;
-  top: 58.98%;
-  bottom: 36.57%;*/
-  position: relative;
-  top: 45%;
+  top: 75%;
   margin-left: auto;
   margin-right: auto;
   height: 10%;
@@ -150,27 +149,23 @@ input:-moz-placeholder { /* Firefox 18- */
 }
 
 .button_login3{
-  /*position: absolute;
-  left: 45.99%;
-  right: 45.99%;
-  top: 56.3%;
+
+  /*top: 56.3%;
   bottom: 39.26%;*/
-  position: relative;
-  top: 25%;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 45%;
+  top: 75%;
   height: 10%;
   width: 15%;
 }
 
 .button_login2{
-  /*position: absolute;
+  /*top: 65.65%;
+  bottom: 29.91%;*/
+  position: absolute;
+  top: 80%;
   left: 46.2%;
   right: 46.2%;
-  top: 65.65%;
-  bottom: 29.91%;*/
-  position: relative;
-  top: 35%;
   margin-left: auto;
   margin-right: auto;
   height: 10%;
@@ -205,9 +200,9 @@ input:-moz-placeholder { /* Firefox 18- */
   right: 36.93%;
   top: 57.5%;
   bottom: 38.8%;*/
-  position: relative;
+  position: absolute;
   width: 80%;
-  top: 40%;
+  top: 65%;
   height: auto;
   margin-left:10%;
   margin-right:10%;
@@ -236,12 +231,13 @@ input:-moz-placeholder { /* Firefox 18- */
 
 .img_avatar{
   /* Oval 2 */
-  position:relative;
+  position:absolute;
+  left: 34%;
   top: 10%;
-  margin-left: 35%;
+  
  
   /*position: absolute;
-  left: 46.67%;
+  
   right: 46.67%;
   top: 32.41%;
   bottom: 55.74%;*/
@@ -252,10 +248,10 @@ input:-moz-placeholder { /* Firefox 18- */
   
   left:: 44.48%;
   
-  top: calc(50% - 34px/2 - 5px);*/
-  position: relative;
-  top:18%;
-  margin-left: 30%;
+  top: ;*/
+  position: absolute;
+  top:45%;
+  left: 30%;
   height: 34px;
   font-family: Gotham;
   font-size: 28px;
