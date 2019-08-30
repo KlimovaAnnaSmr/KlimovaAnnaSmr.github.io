@@ -223,7 +223,6 @@ input:-moz-placeholder { /* Firefox 18- */
   right: 42.55%;
   top: 13.15%;
   bottom: 80.46%;
-  text-align: center;
 }
 
 .img_avatar{
@@ -267,3 +266,54 @@ input:-moz-placeholder { /* Firefox 18- */
   background: #FFFFFF;
   color: #ED4159;
 }
+/*переопределение свойств для экранов мобильных устройств посредством медиазапроса*/
+@media (min-width: 300px) and (max-width: 767.98px) {
+  body{
+    position: absolute;
+    left: -108.12%;
+    right: -107.81%;
+    top: 0%;
+    bottom: -0.18%;
+    background: linear-gradient(150.63deg, #FF435D 0%, #B0208E 100%);
+    }
+  .desktop1{
+    left: 34.38%;
+    right: 34.38%;
+    top: 31.11%;
+    bottom: 31.02%;
+  }
+  .desktop3{
+    left: 5%;
+    right: 5%;
+    top: 21.13%;
+    bottom: 7.04%;
+  }
+  .desktop4{
+    left: 5%;
+    right: 5%;
+    top: 21.13%;
+    bottom: 26.23%;
+  }
+  logo{
+    left: 20.94%;
+    right: 22.19%;
+    top: 7.57%;
+    bottom: 85.39%;
+  }
+  .log-in{
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px; 
+  }
+  .error{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .username{
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+  }
+}
+
