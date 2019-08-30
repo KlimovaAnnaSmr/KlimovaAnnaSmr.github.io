@@ -287,9 +287,10 @@ input:-moz-placeholder { /* Firefox 18- */
     bottom: 26.23%;
   }
   logo{
-    left: 10.94%;
-    top: 7.57%;
-    bottom: 85.39%;
+    left: 20.94%;
+	right: 22.19%;
+	top: 7.57%;
+	bottom: 85.39%;
   }
   .log-in{
     height: 24px;
