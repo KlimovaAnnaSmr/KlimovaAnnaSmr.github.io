@@ -221,7 +221,7 @@ input:-moz-placeholder { /* Firefox 18- */
   text-align: center;
   font-size: 32px;
   color: white;
-  background: url(logo.svg);
+  background: url(Logo.svg);
 }
 
 .avatar{
