@@ -5,77 +5,66 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class = "main">
       <div class = "logo"></div>
-      <!-- Форма Desctop1 из дизайн-спецификации -->
-      <div class = "desctop1" id = "desctop1" style = "display:block">
-        <form name = "authorization1" class = "authorization1" >
-          <div class = "img_avatar" id = "avat" style = "display:none">
-            <img class = "avatar" src="https://i.ibb.co/ZgVB2pV/Oval-2.png" alt="Oval-2" border="0">
-          </div>
-          <input class = "error" type="text" name = "error" id = "error" value = "E-Mail or password is incorrect" style = "display:none">
-          <div id="autoriz">
+      <!-- Форма Desktop1 из дизайн-спецификации -->
+      <div class = "desktop1" id = "desktop1" style = "display:block">
+        <form name = "authorization1" class = "authorization1" style = "text-align:center">
             <label class = "log_in">Log in</label>
             <input type = "e-mail" name = "e-mail1" id = "e-mail1" placeholder = "E-mail" required>
             <input type = "password" name = "password1" id = "password1" placeholder = "Password" required>
             <div class = "button_login1">
               <button class = "button1" id = "button1" onclick='logonClick("e-mail1", "password1")'>Login</button>
             </div>
-          </div>
         </form>
-      </div>
-      <!-- Форма Desctop3 из дизайн-спецификации. После непройденной авторизации -->
-      <div class = "desctop3" id = "desctop3" style = "display:none">
-        <form name = "authorization" class = "authorization2"  >
-          
+        </div>
+      <!-- Форма Desktop3 из дизайн-спецификации. После непройденной авторизации -->
+      <div class = "desktop3" id = "desktop3" style = "display:none">
+        <form name = "authorization2" class = "authorization2"  >
           <label class = "log_in">Log in</label>
           <input  type = "e-mail" name = "e-mail2" id = "e-mail2" placeholder = "E-mail" required>
           <input type = "password" name = "password2" id = "password2" placeholder = "Password" required>
-          <input type = "text" class = "error" name = "error" value ="E-Mail or password is incorrect" disabled>
+          <input type = "text" class = "error" value ="E-Mail or password is incorrect" disabled>
           <div class = "button_login2">
             <button class = "button2" id = "button2" onclick='logonClick("e-mail2", "password2")' >Login</button>
           </div>
         </form>
       </div>
-      <!-- Форма Desctop4 из дизайн-спецификации. После успешной авторизации -->
-      <div class = "desctop4" style = "display:none" id = "desctop4">
+      <!-- Форма Desktop4 из дизайн-спецификации. После успешной авторизации -->
+      <div class = "desktop4" style = "display:none" id = "desktop4">
         <form name = "authorization3" class = "authorization3" >
           <div class = "img_avatar">
-            <img class = "avatar" src="Oval 2.png" alt="Oval-2" border="0">
+            <img class = "avatar" src="Oval-2.png" alt="Oval 2" border="0">
           </div>
           <label class = "username">Helena Joseph</label>
-          
           <div class = "button_login3">
             <button class = "button3" id = "button3" onclick="logoutClick()">Logout</button>
           </div>
-      </form>
+        </form>
       </div>
-      
+
       <script>
-        
-      function showForm(form) {
-        var arr = ['desctop1', 'desctop3', 'desctop4'];
-        arr.forEach(function(el) {
-          if(el == form) {
-            document.getElementById(el).style.display = "block";
-          }
-          else {
-            document.getElementById(el).style.display = "none";
-            var y = document.getElementById(el).getElementsByTagName("input");
-            var i;
-            for (i = 0; i < y.length; i++) {
-              y[i].value = '';
+        function showForm(form) {
+          var arr = ['desktop1', 'desktop3', 'desktop4'];
+          arr.forEach(function(el) {
+            if(el == form) {
+              document.getElementById(el).style.display = "block";
             }
-          }
-        });
-      }
-      
-      function logonClick(idLogin, idPassword) {  
-        var user = document.getElementById(idLogin).value;
-        var password = document.getElementById(idPassword).value;
-        var userData = {
-         email: "",
-         password: ""
+            else {
+             document.getElementById(el).style.display = "none";
+             var y = document.getElementById(el).getElementsByTagName("input");
+             var i;
+             for (i = 0; i < y.length; i++) {
+              y[i].value = '';
+             }
+           }
+         });
+       };
+       function logonClick(idLogin, idPassword) {
+         var user = document.getElementById(idLogin).value;
+         var password = document.getElementById(idPassword).value;
+         var userData = {
+          email: "",
+          password: ""
         };
         userData.email = user;
         userData.password = password;
@@ -86,30 +75,26 @@
         xhr.open("POST", 'https://us-central1-mercdev-academy.cloudfunctions.net/login', false)
         xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
         xhr.send(json);
-
         //изменение окна в зависимости от пройденной / непройденной авторизации
         //  сделать невидимой начальную форму авторизации
-        
         if (xhr.status == 200) {
-          // сделать видимой форму с аватаром
-          showForm('desctop4');
-        } else {
+         // сделать видимой форму с аватаром
+          showForm('desktop4');
+         } else {
           //  сделать видимой форму с ошибкой
-          if(idLogin == "e-mail1") {
+           if(idLogin == "e-mail1") {
             document.getElementById("e-mail2").value = document.getElementById("e-mail1").value;
-          }
-          document.getElementById("password2").value = '';          
-          showForm('desctop3');
-        }
-      }
-    
-       //действие при нажатии Logout на форме с аватаром
-      function logoutClick() {
-          showForm('desctop1');
+         }
+          document.getElementById("password2").value = ''; 
+         // document.getElementById("e-mail2").ClassList.add("error_css");
+          showForm('desktop3');
+       }
       };
-  
+      //действие при нажатии Logout на форме с аватаром
+      function logoutClick() {
+        showForm('desktop1');
+       };
     </script> 
-    </div>
   </body>
 </html>
   
