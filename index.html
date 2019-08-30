@@ -2,25 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <!--чтобы мобильные браузеры автоматически не изменяли размер страниц сайта-->
+    <!--метатег, который сообщает браузеру, как обрабатывать размеры страницы и изменять ее масштаб-->
     <meta name = "viewport" content = "width=device-width, initial-scale = 1">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class = "logo">
+    <!--вывод логотипа  -->
+    <div class = "logo">
         <img src="Logo.svg" alt="Logo" border="0">
       </div>
-      <!-- Форма Desktop1 из дизайн-спецификации -->
+      <!-- Форма Desktop1 из дизайн-спецификации - начальная форма авторизации -->
       <div class = "desktop1" id = "desktop1" style = "display:block">
         <form name = "authorization1" class = "authorization1">
             <label class = "log_in">Log in</label>
             <input type = "e-mail" name = "e-mail1" id = "e-mail1" placeholder = "E-mail" required>
             <input type = "password" name = "password1" id = "password1" placeholder = "Password" required>
             <div class = "button_login1">
+              <!--запуск обработчика при нажатии кнопки-->
               <button class = "button1" id = "button1" onclick='logonClick("e-mail1", "password1")'>Login</button>
             </div>
         </form>
         </div>
-      <!-- Форма Desktop3 из дизайн-спецификации. После непройденной авторизации -->
+      <!-- Форма Desktop3 из дизайн-спецификации. Вывод блока с ошибкой после неудачной авторизации -->
       <div class = "desktop3" id = "desktop3" style = "display:none">
         <form name = "authorization2" class = "authorization2"  >
           <label class = "log_in log-in-err">Log in</label>
@@ -46,15 +50,21 @@
       </div>
 
       <script>
+        //функция для показа или скрытия блоков с аватаром, с ошибкой или начальной формой авторизации/
+        //параметр -  форма, которую надо показать/
         function showForm(form) {
           var arr = ['desktop1', 'desktop3', 'desktop4'];
+          //перебираем массив из 3х форм/
           arr.forEach(function(el) {
+            //если параметр совпадает с формой из массива, показываем ее/
             if(el == form) {
               document.getElementById(el).style.display = "block";
             }
             else {
-             document.getElementById(el).style.display = "none";
-             var y = document.getElementById(el).getElementsByTagName("input");
+              // иначе прячем форму/
+              document.getElementById(el).style.display = "none";
+             //очищаем поля формы/
+              var y = document.getElementById(el).getElementsByTagName("input");
              var i;
              for (i = 0; i < y.length; i++) {
               y[i].value = '';
@@ -63,6 +73,7 @@
          });
        };
        function logonClick(idLogin, idPassword) {
+         //записываем объект с полями e-mail и password/
          var user = document.getElementById(idLogin).value;
          var password = document.getElementById(idPassword).value;
          var userData = {
@@ -71,30 +82,36 @@
         };
         userData.email = user;
         userData.password = password;
-        //создание JSON с двумя полями: email и password 
+        //создание JSON с двумя полями: email и password /
         var json = JSON.stringify(userData);
         //отправка POST-запроса
         var xhr = new XMLHttpRequest();
         xhr.open("POST", 'https://us-central1-mercdev-academy.cloudfunctions.net/login', false)
         xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
         xhr.send(json);
-        //изменение окна в зависимости от пройденной / непройденной авторизации
-        //  сделать невидимой начальную форму авторизации
+        //изменение окна в зависимости от пройденной / непройденной авторизации/
+        //  сделать невидимой начальную форму авторизации/
         if (xhr.status == 200) {
-         // сделать видимой форму с аватаром
+         // сделать видимой форму с аватаром/
           showForm('desktop4');
          } else {
-          //  сделать видимой форму с ошибкой
-           if(idLogin == "e-mail1") {
+          //  сделать видимой форму с ошибкой/
+          if(idLogin == "e-mail1") {
+            //передаем введенную почту в блок с ошибкой /
             document.getElementById("e-mail2").value = document.getElementById("e-mail1").value;
-         }
-          document.getElementById("password2").value = ''; 
-         // document.getElementById("e-mail2").ClassList.add("error_css");
-          showForm('desktop3');
+          }
+            //очищаем поле пароля-->
+            document.getElementById("password2").value = ''; 
+            //устанавливаем красный цвет текста для почты и рамку при ошибке
+           document.getElementById("e-mail2").style.color = "#ED4159";
+           document.getElementById("e-mail2").style.border =  "1px solid #ED4159";
+           //показываем блок с ошибкой и скрываем начальное окно авторизации
+           showForm('desktop3');
        }
       };
       //действие при нажатии Logout на форме с аватаром
       function logoutClick() {
+        //скрываем блок с аватаром и выводим начальную форму для авторизации
         showForm('desktop1');
        };
     </script> 
