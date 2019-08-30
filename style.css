@@ -39,7 +39,6 @@ input[type = "e-mail"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
-/* identical to box height */
   color: #262626;
   opacity: 0.8;
 }
@@ -79,7 +78,7 @@ input::-webkit-input-placeholder {
 	opacity: 0.4;
 }
 					
-input:-moz-placeholder 
+input:-moz-placeholder{ 
 	opacity: 0.4;  
 }
 .log_in{
