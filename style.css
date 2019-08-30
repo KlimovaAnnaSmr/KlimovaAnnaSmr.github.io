@@ -9,10 +9,17 @@ body {
   background: url(background.png);
 }
 
+/*позиционирование блока с логотипом*/
+.logo{
+  position: absolute;
+  left: 41.04%;
+  right: 42.55%;
+  top: 13.15%;
+  bottom: 80.46%;
+}
 
+/*стилизация блока с начальной формой авторизации*/
 .desktop1{
-  /* Group 4 */
-
   position: absolute;
   left: 34.38%;
   right: 34.38%;
@@ -22,9 +29,9 @@ body {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-.desktop3{
-  /* Group 4 */
 
+/*стилизация блока с выводом ошибки*/
+.desktop3{
   position: absolute;
   left: 34.38%;
   right: 34.38%;
@@ -34,9 +41,9 @@ body {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
-.desktop4{
-  /* Group 4 */
 
+/*стилизация блока с выводом аватара*/
+.desktop4{
   position: absolute;
   left: 34.38%;
   right: 34.38%;
@@ -46,12 +53,15 @@ body {
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
 }
+
+/*позиционирование всех форм на всю ширину и высоту блока*/
 .authorization1, .authorization2, .authorization3{
   position:static;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
 }
 
+/*стилизация поля ввода почты, абсолютное позиционирование относительно блока*/
 input[type = "e-mail"]{
   position: absolute;
   top: 35%;
@@ -64,25 +74,12 @@ input[type = "e-mail"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
-/* identical to box height */
   color: #262626;
   opacity: 0.8;
 }
 
-
-
-.error_css{
-  color: #ED4159;
-  border: 1px solid #ED4159;
-}
-
+/*стилизация поля ввода пароля, абсолютное позиционирование относительно блока*/
 input[type = "password"]{
-
-  /*position: absolute;
-  left: 36.88%;
-  right: 36.88%;
-  top: 50.09%;
-  bottom: 45.46%;*/
   position: absolute;
   width: 80%;
   top: 55%;
@@ -94,21 +91,23 @@ input[type = "password"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
-/* identical to box height */
   color: #262626;
   opacity: 0.8;
 }
 
+/*сдвиг поля для ввода почты на блоке с выводом ошибки*/
 #e-mail2{
   top: 25%;
   height: auto;
 }
 
+/*сдвиг поля для ввода пароля на блоке с выводом ошибки*/
 #password2{
   top: 45%;
   height: auto;
 }
 
+/*изменние насыщенности подсказки в полях ввода почты и пароля*/
 input::-webkit-input-placeholder {
 	opacity: 0.4;
 }
@@ -116,6 +115,8 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder { /* Firefox 18- */
 	opacity: 0.4;  
 }
+
+/*стилизация надписи Log in*/
 .log_in{
   position:absolute;
   top: 15%;
@@ -130,13 +131,13 @@ input:-moz-placeholder { /* Firefox 18- */
   opacity: 0.8;
 }
 
+/*сдвиг надписи на блоке с выводом ошибки*/
 .log-in-err{
   top: 10%;
 }
+
+/*позиционирование кнопки в начальном блоке*/
 .button_login1{
-  /*
-  top: 58.98%;
-  bottom: 36.57%;*/
   position: absolute;
   left: 46.2%;
   right: 46.2%;
@@ -145,23 +146,10 @@ input:-moz-placeholder { /* Firefox 18- */
   margin-right: auto;
   height: 10%;
   width: 15%;
- 
 }
 
-.button_login3{
-
-  /*top: 56.3%;
-  bottom: 39.26%;*/
-  position: absolute;
-  left: 45%;
-  top: 75%;
-  height: 10%;
-  width: 15%;
-}
-
+/*позиционирование кнопки в блоке с ошибкой*/
 .button_login2{
-  /*top: 65.65%;
-  bottom: 29.91%;*/
   position: absolute;
   top: 80%;
   left: 46.2%;
@@ -171,80 +159,66 @@ input:-moz-placeholder { /* Firefox 18- */
   height: 10%;
   width: 15%;
 }
-.button1, .button2, .button3{
 
+/*позиционирование кнопки в блоке с аватаркой*/
+.button_login3{
+  position: absolute;
+  left: 45%;
+  top: 75%;
+  height: 10%;
+  width: 15%;
+}
+
+/*стилизация кнопок на всех формах*/
+.button1, .button2, .button3{
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-
   background: #ED4159;
   box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
   border-radius: 100px;
-  
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   text-align: center;
   color: #FFFFFF;
 }
 
-  
-  
+/*изменение стиля кнопок при нажатии или наведении курсора*/
+.button1:hover, .button2:hover, .button3:hover, 
+.button1:active, .button2:active, .button3:active 
+ {
+  background: #FFFFFF;
+  color: #ED4159;
+}
+
+/*стилизация и позиционирование текста о неправильных почте и пароле*/
 .error{
-  /*
-  position: absolute;
-  left: 36.88%;
-  right: 36.93%;
-  top: 57.5%;
-  bottom: 38.8%;*/
   position: absolute;
   width: 80%;
   top: 65%;
   height: auto;
   margin-left:10%;
   margin-right:10%;
-
   background: rgba(237, 65, 89, 0.25);
   border-radius: 4px;
-
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
-
   color: #ED4159;
 }
 
-.logo{
-  position: absolute;
-  left: 41.04%;
-  right: 42.55%;
-  top: 13.15%;
-  bottom: 80.46%;
-}
-
+/*позиционирование блока с аватаркой*/
 .img_avatar{
-  /* Oval 2 */
   position:absolute;
   left: 40%;
   top: 10%;
-  
- 
-  /*position: absolute;
-  
-  right: 46.67%;
-  top: 32.41%;
-  bottom: 55.74%;*/
 }
 
+/*стилизация и позиционирование имени пользователя*/
 .username{
-  /*position: absolute;
-  
-  left:: 44.48%;
-  
-  top: ;*/
   position: absolute;
   top:50%;
   left: 38%;
@@ -252,20 +226,12 @@ input:-moz-placeholder { /* Firefox 18- */
   font-family: Gotham;
   font-size: 28px;
   line-height: 34px;
-
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.233333px;
   color: #262626;
   opacity: 0.8;
 }
 
-.button1:hover, .button2:hover, .button3:hover, 
-.button1:active, .button2:active, .button3:active 
- {
-  background: #FFFFFF;
-  color: #ED4159;
-}
 /*переопределение свойств для экранов мобильных устройств посредством медиазапроса*/
 @media (min-width: 300px) and (max-width: 767.98px) {
 .desktop1{
@@ -307,7 +273,10 @@ input:-moz-placeholder { /* Firefox 18- */
     line-height: 22px;
     letter-spacing: 0.15px;
   }
-.button_login1, .button_login2, .button_login3{
+	
+.button_login1, 
+.button_login2, 
+.button_login3{
 	width: 30%;
 }
 }
