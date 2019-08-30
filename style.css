@@ -254,9 +254,9 @@ input:-moz-placeholder { /* Firefox 18- */
   }
   .logo{
     left: 7%;
-	right: 10%;
-	top: 7.57%;
-	bottom: 85.39%;
+    right: 10%;
+    top: 7.57%;
+    bottom: 85.39%;
   }
   .log-in{
     height: 24px;
@@ -273,17 +273,17 @@ input:-moz-placeholder { /* Firefox 18- */
     line-height: 22px;
     letter-spacing: 0.15px;
     top:55%;  
-    left: 30% 
+    left: 30%; 
   }
 
 .img_avatar{
    left: 33%;
 }
 	
-.button_login1, 
-.button_login2, 
-.button_login3{
-	width: 30%;
-}
+  .button_login1, 
+  .button_login2, 
+  .button_login3{
+      width: 30%;
+ }
 }
 
