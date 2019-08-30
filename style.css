@@ -11,6 +11,7 @@ body {
 
 .desktop1, .desktop3, .desktop4{
   /* Group 4 */
+
   position: absolute;
   left: 34.38%;
   right: 34.38%;
@@ -23,8 +24,8 @@ body {
 
 .authorization1, .authorization2, .authorization3{
   position:static;
-  width: 100%; 
-  height: 100%; 
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
 }
 
 input[type = "e-mail"]{
@@ -39,9 +40,12 @@ input[type = "e-mail"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
+/* identical to box height */
   color: #262626;
   opacity: 0.8;
 }
+
+
 
 .error_css{
   color: #ED4159;
@@ -49,6 +53,12 @@ input[type = "e-mail"]{
 }
 
 input[type = "password"]{
+
+  /*position: absolute;
+  left: 36.88%;
+  right: 36.88%;
+  top: 50.09%;
+  bottom: 45.46%;*/
   position: relative;
   width: 80%;
   top: 35%;
@@ -60,6 +70,7 @@ input[type = "password"]{
   font-family: Gotham;
   font-size: 16px;
   line-height: 19px;
+/* identical to box height */
   color: #262626;
   opacity: 0.8;
 }
@@ -78,7 +89,7 @@ input::-webkit-input-placeholder {
 	opacity: 0.4;
 }
 					
-input:-moz-placeholder{ 
+input:-moz-placeholder { /* Firefox 18- */
 	opacity: 0.4;  
 }
 .log_in{
@@ -89,6 +100,7 @@ input:-moz-placeholder{
   font-family: Gotham;
   font-size: 24px;
   line-height: 29px;
+/* identical to box height */
   text-align: center;
   letter-spacing: 0.2px;
   color: #262626;
@@ -99,6 +111,12 @@ input:-moz-placeholder{
   top: 10%;
 }
 .button_login1{
+  /*
+  position: absolute;
+  left: 46.2%;
+  right: 46.2%;
+  top: 58.98%;
+  bottom: 36.57%;*/
   position: relative;
   top: 45%;
   margin-left: auto;
@@ -123,6 +141,11 @@ input:-moz-placeholder{
 }
 
 .button_login2{
+  /*position: absolute;
+  left: 46.2%;
+  right: 46.2%;
+  top: 65.65%;
+  bottom: 29.91%;*/
   position: relative;
   top: 45%;
   margin-left: auto;
@@ -130,35 +153,49 @@ input:-moz-placeholder{
   height: 10%;
   width: 15%;
 }
-
 .button1, .button2, .button3{
+
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
+
   background: #ED4159;
   box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
   border-radius: 100px;
+  
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
+  /* identical to box height */
   text-align: center;
   color: #FFFFFF;
 }
-   
+
+  
+  
 .error{
+  /*
+  position: absolute;
+  left: 36.88%;
+  right: 36.93%;
+  top: 57.5%;
+  bottom: 38.8%;*/
   position: relative;
   width: 80%;
   top: 40%;
   height: auto;
   margin-left:10%;
   margin-right:10%;
+
   background: rgba(237, 65, 89, 0.25);
   border-radius: 4px;
+
   font-family: Gotham;
   font-size: 14px;
   line-height: 17px;
+
   color: #ED4159;
 }
 
@@ -175,21 +212,27 @@ input:-moz-placeholder{
 }
 
 .avatar{
-  position: absolute;
+  /* Oval 2 */
+  position:relative;
+  /*position: absolute;
   left: 46.67%;
   right: 46.67%;
   top: 32.41%;
-  bottom: 55.74%;
+  bottom: 55.74%;*/
 }
 
 .username{
   position: absolute;
   height: 34px;
   left: 44.48%;
+  
   top: calc(50% - 34px/2 - 5px);
+
   font-family: Gotham;
   font-size: 28px;
   line-height: 34px;
+
+  /* identical to box height */
   text-align: center;
   letter-spacing: 0.233333px;
   color: #262626;
@@ -203,4 +246,3 @@ input:-moz-placeholder{
   color: #ED4159;
 }
 */
-
