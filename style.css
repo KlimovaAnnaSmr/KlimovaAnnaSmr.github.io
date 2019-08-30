@@ -253,7 +253,7 @@ input:-moz-placeholder { /* Firefox 18- */
     bottom: 26.23%;
   }
   .logo{
-    left: 7%;
+    left: 3%;
     right: 10%;
     top: 7.57%;
     bottom: 85.39%;
@@ -273,7 +273,7 @@ input:-moz-placeholder { /* Firefox 18- */
     line-height: 22px;
     letter-spacing: 0.15px;
     top:55%;  
-    left: 30%; 
+    left: 33%; 
   }
 
 .img_avatar{
