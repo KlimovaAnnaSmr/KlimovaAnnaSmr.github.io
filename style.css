@@ -229,7 +229,7 @@ input:-moz-placeholder { /* Firefox 18- */
 .img_avatar{
   /* Oval 2 */
   position:absolute;
-  left: 45%;
+  left: 40%;
   top: 10%;
   
  
@@ -247,8 +247,8 @@ input:-moz-placeholder { /* Firefox 18- */
   
   top: ;*/
   position: absolute;
-  top:60%;
-  left: 44%;
+  top:50%;
+  left: 38%;
   height: 34px;
   font-family: Gotham;
   font-size: 28px;
