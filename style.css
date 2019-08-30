@@ -30,17 +30,19 @@ body {
 }
 
 input[type = "e-mail"]{
- /*
- position: absolute;
+ 
+ /*position: absolute;
   left: 36.88%;
   right: 36.88%;
   top: 42.69%;
-  bottom: 52.87%;
-  */
+  bottom: 52.87%;*/
+  
   position: relative;
   top: 25%;
   width: 80%;
-  /*margin: 40% auto;*/
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 9%;
   background: #F1F1F1;
   border-radius: 4px;
   font-family: Gotham;
@@ -66,9 +68,11 @@ input[type = "password"]{
   top: 50.09%;
   bottom: 45.46%;*/
   position: relative;
-  top: 35%;
   width: 80%;
-  /*margin: auto 9%;*/
+  top: 35%;
+  height: 9%;
+  margin-left:10%;
+  margin-right:10%;
   background: #F1F1F1;
   border-radius: 4px;
   font-family: Gotham;
@@ -77,6 +81,16 @@ input[type = "password"]{
 /* identical to box height */
   color: #262626;
   opacity: 0.8;
+}
+
+#e-mail2{
+  top: 20%;
+  height: auto;
+}
+
+#password2{
+  top: 30%;
+  height: auto;
 }
 
 input::-webkit-input-placeholder {
@@ -90,22 +104,25 @@ input:-moz-placeholder { /* Firefox 18- */
   /*position: absolute;
   left: 45%;
   top: calc(50% - 29px/2 - 141.5px);*/
+
   position:relative;
   top: 15%;
+  margin-left:40%;
+  margin-right:35%;
   height: 29px;
   font-family: Gotham;
   font-size: 24px;
   line-height: 29px;
-
 /* identical to box height */
   text-align: center;
   letter-spacing: 0.2px;
-
   color: #262626;
-
   opacity: 0.8;
 }
 
+.log-in-err{
+  top: 10%;
+}
 .button_login1{
   /*
   position: absolute;
@@ -113,8 +130,13 @@ input:-moz-placeholder { /* Firefox 18- */
   right: 46.2%;
   top: 58.98%;
   bottom: 36.57%;*/
-  position:relative;
-  top:45%;
+  position: relative;
+  top: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  width: 15%;
+ 
 }
 
 .button_login3{
@@ -123,17 +145,34 @@ input:-moz-placeholder { /* Firefox 18- */
   right: 45.99%;
   top: 56.3%;
   bottom: 39.26%;*/
-  position:relative;
-  top:50%;
+  position: relative;
+  top: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  width: 15%;
 }
 
+.button_login2{
+  /*position: absolute;
+  left: 46.2%;
+  right: 46.2%;
+  top: 65.65%;
+  bottom: 29.91%;*/
+  position: relative;
+  top: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10%;
+  width: 15%;
+}
 .button1, .button2, .button3{
 
-  /*position: absolute;
+  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%;*/
+  bottom: 0%;
 
   background: #ED4159;
   box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
@@ -146,15 +185,8 @@ input:-moz-placeholder { /* Firefox 18- */
   text-align: center;
   color: #FFFFFF;
 }
-.button_login2{
-  /*position: absolute;
-  left: 46.2%;
-  right: 46.2%;
-  top: 65.65%;
-  bottom: 29.91%;*/
-  position:relative;
-  top:50%;
-}
+
+  
   
 .error{
   /*
@@ -163,7 +195,12 @@ input:-moz-placeholder { /* Firefox 18- */
   right: 36.93%;
   top: 57.5%;
   bottom: 38.8%;*/
-  
+  position: relative;
+  width: 80%;
+  top: 40%;
+  height: auto;
+  margin-left:10%;
+  margin-right:10%;
 
   background: rgba(237, 65, 89, 0.25);
   border-radius: 4px;
@@ -222,3 +259,4 @@ input:-moz-placeholder { /* Firefox 18- */
   color: #ED4159;
 }
 */
+
